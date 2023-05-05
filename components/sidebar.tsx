@@ -5,10 +5,11 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import CreatePost from "./CreatePost"
 import AddIcon from '@mui/icons-material/Add';
 
-var isTrue = true
-
 const createPost = () => {
-  isTrue = !isTrue
+  var x = document.getElementById("cp");
+  if (x!.style.display === "none") {
+    x!.style.display = "block";
+  }
 }
 
 const Sidebar = () => {
@@ -18,7 +19,6 @@ const Sidebar = () => {
       <ul >
         <li>
             <ExploreIcon />
-
             <Link href="/" className="Link">Explore</Link>
         </li>
         <li>
@@ -26,11 +26,10 @@ const Sidebar = () => {
           <Link href="/account" className="Link">Account</Link>
         </li>
           <li>
-            <AddIcon /><span className="createpost">Create Post</span>
-            {/* <div><CreatePost /></div> */}
+            <AddIcon /><span className="createpost" onClick={createPost}>Create Post</span>
           </li>
       </ul>
-      {isTrue ? <CreatePost /> : <></>}
+      <CreatePost />
     </div>
   )
 }

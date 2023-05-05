@@ -121,8 +121,16 @@ h3 {
   margin-left: 100px;
 }
 
+.cancelbutton {
+  margin-left: 278px;
+  background-color: rgb(221, 221, 221);
+  padding: 7px;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
 .createpostbutton {
-  margin-left: 348px;
+  margin-left: 10px;
   background-color: pink;
   padding: 7px;
   border-radius: 8px;
