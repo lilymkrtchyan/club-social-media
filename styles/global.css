@@ -6,6 +6,29 @@ body {
   padding: 0%;
 }
 
+.account-edit-page{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.account-edit-form label {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.account-edit-form input,
+.account-edit-form textarea {
+  margin-top: 0.5rem; 
+  width: 100%;
+  gap: 1rem;
+}
+
+.account-edit-form button {
+  margin-top: 1rem; 
+}
+
 .sidebar {
   margin: 0;
   padding: 4em;
