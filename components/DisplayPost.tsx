@@ -1,8 +1,9 @@
-import { Post } from "@/types";
+import { PostWithId } from "@/types";
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Image from 'next/image'
+
 type Props = {
-  readonly post: Post
+  readonly post: PostWithId
 }
 
 const DisplayPost = ({ post }: Props) => {
