@@ -47,7 +47,7 @@ const CreatePost = () => {
 
   
   return (
-    <div id = "cp" className="createpost">
+    <div id="cp" className="createpost" style={{display:"none"}}>
       <textarea id="text" className = "createposttext" placeholder="What's happening?" onChange={(e) => setInput(e.target.value)}></textarea>
       <br></br>
       <button className = "cancelbutton" onClick={cancel}>Cancel</button>
