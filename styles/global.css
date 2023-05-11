@@ -1,3 +1,7 @@
+html {
+  width: 100%;
+}
+
 body {
   background-color: black;
   display: flex;
@@ -5,7 +9,9 @@ body {
   font-family: sans-serif;
   padding: 0%;
   margin: 0;
+  width: 100%;
 }
+
 
 .account-edit-page {
   display: flex;
@@ -32,12 +38,13 @@ body {
 
 .sidebar {
   margin: 0;
-  padding: 4em;
+  padding: 2em;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 1em;
-
+  width: 100%;
+  max-width: 375px
 }
 
 ul {
@@ -54,15 +61,18 @@ li {
   margin: 10px;
 }
 
+
 .Link {
   text-decoration: none;
   color: white;
   font-size: 30px
 }
 
+
 .app {
   display: flex;
   flex-direction: row;
+  width: 100vw;
 }
 
 .feed {
@@ -70,7 +80,7 @@ li {
   border-left: gray solid;
   border-right: gray solid;
   padding-top: 0.9em;
-  width: 600px;
+  flex-grow: 1.5;
 }
 
 .feed h2 {
@@ -113,7 +123,7 @@ h3 {
 .createpost {
   text-decoration: none;
   color: white;
-  font-size: 30px
+  font-size: 30px;
 }
 
 .createposttext {
@@ -136,4 +146,10 @@ h3 {
   padding: 7px;
   border-radius: 8px;
   font-weight: bold;
+}
+
+.rightBar {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
