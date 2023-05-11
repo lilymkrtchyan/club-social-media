@@ -1,9 +1,13 @@
-import { signInWithGoogle } from '../util/firebase';
+import { signInWithGoogle, signOut } from '../util/firebase';
+import { useAuth } from './AuthUserProvider';
 
 const RightBar = () => {
+  const { user } = useAuth()
   return (
     <div className="rightBar">
-      <button onClick={signInWithGoogle}>Sign In With Google</button>
+      <button onClick={user ? signOut : signInWithGoogle}>
+        {user ? "Sign Out" : "Sign In With Google"}
+      </button>
     </div>
   )
 }
