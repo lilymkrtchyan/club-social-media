@@ -918,7 +918,7 @@
 
 "@types/node@18.16.3", "@types/node@>=12.12.47", "@types/node@>=13.7.0":
   version "18.16.3"
-  resolved "https://registry.npmjs.org/@types/node/-/node-18.16.3.tgz"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-18.16.3.tgz#6bda7819aae6ea0b386ebc5b24bdf602f1b42b01"
   integrity sha512-OPs5WnnT1xkCBiuQrZA4+YAV4HEJejmHneyraIaxsbev5yCEr6KMwINNFP9wQeFIw8FWcoTqF3vQsa5CDaI+8Q==
 
 "@types/parse-json@^4.0.0":
@@ -933,7 +933,7 @@
 
 "@types/react-dom@18.2.3":
   version "18.2.3"
-  resolved "https://registry.npmjs.org/@types/react-dom/-/react-dom-18.2.3.tgz"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.2.3.tgz#2fe492bb0e67047b7b43e18166d8f50d44e0525e"
   integrity sha512-hxXEXWxFJXbY0LMj/T69mznqOZJXNtQMqVxIiirVAZnnpeYiD4zt+lPsgcr/cfWg2VLsxZ1y26vigG03prYB+Q==
   dependencies:
     "@types/react" "*"
@@ -3087,6 +3087,11 @@ react-transition-group@^4.4.5:
     dom-helpers "^5.0.1"
     loose-envify "^1.4.0"
     prop-types "^15.6.2"
+
+react-with-firebase-auth@^1.4.1:
+  version "1.4.1"
+  resolved "https://registry.yarnpkg.com/react-with-firebase-auth/-/react-with-firebase-auth-1.4.1.tgz#dd572f0880200de3b132337cd569ca38b94b9eb8"
+  integrity sha512-IkhPlnSFwVu30f/m6tL7cno4SsVnq+yUSadk1ntuurLgVZjTFZLwYTnIzwM4Rc8sx+wgBl7mEGo8XPzWWLjg7A==
 
 react@18.2.0:
   version "18.2.0"
