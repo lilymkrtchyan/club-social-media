@@ -153,3 +153,12 @@ h3 {
   flex-direction: column;
   flex-grow: 1;
 }
+
+.signinout {
+  background-color: rgb(221, 221, 221);
+  padding: 7px;
+  margin: 10px;
+  margin-right: 25px;
+  border-radius: 8px;
+  font-weight: bold;
+}

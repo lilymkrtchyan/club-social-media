@@ -5,7 +5,7 @@ const RightBar = () => {
   const { user } = useAuth()
   return (
     <div className="rightBar">
-      <button onClick={user ? signOut : signInWithGoogle}>
+      <button className="signinout" onClick={user ? signOut : signInWithGoogle}>
         {user ? "Sign Out" : "Sign In With Google"}
       </button>
     </div>
