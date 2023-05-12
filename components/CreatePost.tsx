@@ -3,6 +3,7 @@ import { MouseEventHandler, FormEventHandler, useState } from 'react';
 import { Post } from "@/types"
 import {addDoc, collection } from "firebase/firestore"
 import { db } from "@/util/firebase"
+import { useAuth } from "./AuthUserProvider" 
 
 const cancel = () => {
   var x = document.getElementById("cp");
@@ -18,14 +19,15 @@ const cancel = () => {
 
 const CreatePost = () => {
   const [input, setInput] = useState("")
+  const { user } = useAuth()
 
   const newPost: MouseEventHandler<HTMLButtonElement> = (e) => {
     e.preventDefault()
     if (input === "") return
 
     const post: Post = {
-      name: "DefaultName",
-      username: "@defaultusername",
+      name: user!.displayName!,
+      username: user!.email!,
       text: input,
       date: Date()
     }
