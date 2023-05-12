@@ -4,13 +4,15 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import Image from 'next/image'
 import {doc, deleteDoc, collection } from "firebase/firestore"
 import { db } from "@/util/firebase"
-
+import { useAuth } from "./AuthUserProvider" 
 
 type Props = {
   readonly post: PostWithId
 }
 
 const DisplayPost = ({ post }: Props) => {
+  const { user } = useAuth()
+
   const deletePost = () => {
     const task = doc(db, "posts", post.id)
     deleteDoc(task)
@@ -22,7 +24,12 @@ const DisplayPost = ({ post }: Props) => {
       <div className="postBody">
         <div className="postHeader">
           <h3>{post.name} {post.username}</h3>
-          <DeleteIcon className="deletepost" onClick={deletePost}/>
+          {user != null
+          ? post.username === user!.email
+            ? <DeleteIcon className="deletepost" onClick={deletePost}/>
+            : <></>
+          : <></>
+        }
         </div>
         <p className="text">
           {post.text}
